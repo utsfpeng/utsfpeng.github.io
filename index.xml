@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Frank Peng</title>
+    <link>https://utsfpeng.github.io/</link>
+    <description>Recent content on Frank Peng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Sun, 10 Feb 2019 21:43:34 +1100</lastBuildDate>
+    
+	<atom:link href="https://utsfpeng.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Week 1 Reflection</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/week-1-reflection/</link>
+      <pubDate>Sun, 10 Feb 2019 21:43:34 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/week-1-reflection/</guid>
+      <description>Week 1 Reflection (Sprint 1) Introduction Hi, I&amp;rsquo;m Frank Peng! I&amp;rsquo;m currently a 5th year Software Engineering Student at UTS. I am undertaking a Bachelor&amp;rsquo;s Degree in Engineering with Honours and a Diploma in Professional Engineering Practice (C09067v2 - B Eng DipProfEngPrac). I am majoring in ICT Engineering and sub-majoring in Software.
+I have always had a strong interest towards Cyber Security since the start of my university degree and I have thought about the possibility of pursuing the Cyber Security field as a potential future career when I graduate. However, I have struggled trying to find a way to start and get involved for a long time, so I haven&amp;rsquo;t had as much exposure to the Cyber Security space as I would&amp;rsquo;ve liked.
+I chose to undertake the UTS MIDAS Summer Studio 2019 subject and join the Cyber Security Studio as a way to get my hands dirty and begin my journey towards learning about Cyber Security and acquire the skills and experience needed to get me started. I hope to use everything I learn in the studio as a starting point to allow me to continue learning more after building a foundational background in the field.
+Learning Contract As of right now, some of the learning goals and tasks that I intend to achieve through the project is:</description>
+    </item>
+    
+    <item>
+      <title>First Blog Post</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/first-blog-post/</link>
+      <pubDate>Wed, 06 Feb 2019 15:23:18 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/first-blog-post/</guid>
+      <description>My very first experience with Markdown I have not had any prior experience with writing markdown, but this is my first attempt at doing so.
+It seems to follow a logical structure and have very intuitive and common sense based formatting, so it almost feels like natural language based format when writing. However, there are still a few things that I am trying to confirm, such as code formatting especially when I&amp;rsquo;m writing actual sections or pieces of code on the website.
+In addition, I was also advised that I can write pure html as well, it may come especially handy for iframes and also other embedded based html code. Furthermore, I am still getting accustomed to creating tables.
+Plans for how I am going to construct this website for UTS MIDAS Summer Studio 2019.
+ Home = Home page Blog = Reflections (Weekly Reflections, as part of the requirements for Cyber Security Studio) + SLOs (Addressing all the Subject Learning Outcomes for the studio) Portfolio = End of Studio Deliverable About = Brief Summary about myself and the website.  Going to try and learn python and learn how to use Kali Linux to explore cyber security concepts.</description>
+    </item>
+    
+  </channel>
+</rss>
