@@ -6,10 +6,28 @@
     <description>Recent content in Blogs on Frank Peng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <lastBuildDate>Sun, 10 Feb 2019 21:43:34 +1100</lastBuildDate>
+    <lastBuildDate>Wed, 13 Feb 2019 00:25:52 +1100</lastBuildDate>
     
 	<atom:link href="https://utsfpeng.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Homework Wk 2</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/homework-wk-2/</link>
+      <pubDate>Wed, 13 Feb 2019 00:25:52 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/homework-wk-2/</guid>
+      <description>Week 2 - Homework Problem Statement A realistic and achievable goal that I set for myself is to gain fundamentals skills in pen-testing, so that I am able to have a solid skill set that I can build upon after the studio to go towards a future career in cyber security.
+Currently, I have zero knowledge of Cyber Security in regards to what tools and techniques to use for pen-testing and I want to improve my general ability to detect web application security vulnerabilities.
+I have been recommended PicoCTF, HackTheBox, natas and bandits (Wargames) to start myself on the journey of learning.
+Also the resources recommended in this week for web penetration skills development include: * Web for Pentester * WebGoat * Natas * Shellter Labs * Root Me
+Ref: https://utscyber.studio/learn/Week%202%20-%20Feb%2011/
+Possible milestones to my goal:
+ Being able to complete all the Natas challenges Going through PentesterLab Exercises and the Bootcamp. Try the HackTheBox platform and get to root for a few boxes (min 3).  IDEAL:
+Ideally I would like to be able to hold my own ground when finding common web app security vulnerabilities and knowing how to check if they exist or not.
+REALITY:
+In reality, I don&amp;rsquo;t have the knowledge, skill or experience to currently search for common web security vulnerabilities when given the task to do so.</description>
+    </item>
     
     <item>
       <title>Week 1 Reflection</title>
