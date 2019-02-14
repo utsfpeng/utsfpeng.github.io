@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en-au">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
+  <meta name="author" content="Frank Peng">
+  <meta name="description" content="Web Application Security - Problem Statement For submission on Friday 15-02-2019
+Current Problem Statement on WebAppSec In Web Application Security, my goal is to learn how to identify common web vulnerabilities and develop a habit/mindset on checking for them first, so that I can do something akin to a process of elimination and work out what flaws and vulnerabilities that a website may have.
+Currently, I still feel that I do not have a grasp on what to look for and haven&rsquo;t developed the habit or &ldquo;muscle-memory&rdquo; for discovering common web vulnerabilities. As such, I don&rsquo;t have a logical order of doing the basic steps to eliminate the potential likelihood that common vulnerabilities may exist.
+In order to close this knowledge gap, my solution is to start off working on the Natas challenges till I reach the end (if possible) and potentially look at the other resources suggested (WebGoat, Web for Pentester, Shellter Labs and Root Me). In addition, I might try working on Hack The Box and Try Hack Me (Mr Robot), when I feel that I have the basics down and feel comfortable that my skill level can attempt it.
+In Natas so far, I&rsquo;ve went through a few levels and discovered a pattern of:">
+  
+  <meta property="og:title" content="Webappsec Statement" />
+<meta property="og:description" content="Web Application Security - Problem Statement For submission on Friday 15-02-2019
+Current Problem Statement on WebAppSec In Web Application Security, my goal is to learn how to identify common web vulnerabilities and develop a habit/mindset on checking for them first, so that I can do something akin to a process of elimination and work out what flaws and vulnerabilities that a website may have.
+Currently, I still feel that I do not have a grasp on what to look for and haven&rsquo;t developed the habit or &ldquo;muscle-memory&rdquo; for discovering common web vulnerabilities. As such, I don&rsquo;t have a logical order of doing the basic steps to eliminate the potential likelihood that common vulnerabilities may exist.
+In order to close this knowledge gap, my solution is to start off working on the Natas challenges till I reach the end (if possible) and potentially look at the other resources suggested (WebGoat, Web for Pentester, Shellter Labs and Root Me). In addition, I might try working on Hack The Box and Try Hack Me (Mr Robot), when I feel that I have the basics down and feel comfortable that my skill level can attempt it.
+In Natas so far, I&rsquo;ve went through a few levels and discovered a pattern of:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utsfpeng.github.io/blog/2019-02/webappsec-statement/" />
+<meta property="article:published_time" content="2019-02-15T01:49:06&#43;11:00"/>
+<meta property="article:modified_time" content="2019-02-15T01:49:06&#43;11:00"/>
+
+
+  <title>
+  
+       Webappsec Statement | Frank Peng 
+  
+  </title>
+
+  <link rel="canonical" href="https://utsfpeng.github.io/blog/2019-02/webappsec-statement/">
+
+  
+  
+
+  
+  <link href="https://utsfpeng.github.io/css/vendors-extensions/fontawesome/all.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:300,400,500,600">
+  <link href="https://utsfpeng.github.io/css/font.css" rel="stylesheet"> 
+    
+  
+  <link href="https://utsfpeng.github.io/css/vendors/bootstrap4/bootstrap.min.css" rel="stylesheet">
+  <link href="https://utsfpeng.github.io/css/vendors-extensions/mdb/mdb.min.css" rel="stylesheet"> 
+  <link href="https://utsfpeng.github.io/css/vendors/mdb/style.min.css" rel="stylesheet"> 
+  <link href="https://utsfpeng.github.io/css/main.css" rel="stylesheet">
+
+
+  
+  <link rel="shortcut icon"
+  
+      href="https://utsfpeng.github.io/img/logo.png"
+  
+  >
+
+
+  
+  
+
+  <style type="text/css">
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+  </style>
+
+
+  
+    
+    <link rel="stylesheet" href="https://utsfpeng.github.io/js/vendors/katex/katex.min.css">
+  
+  
+
+  
+    
+    <link rel="stylesheet" href="https://utsfpeng.github.io/css/vendors/highlight/github-gist.css">
+  
+
+</head>
+
+  <body class="bg-light" data-spy="scroll" data-target="#page-scrollspy" data-offset="90">
+  
+    
+    
+
+    
+      
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      
+      <a class="navbar-brand" href="https://utsfpeng.github.io/">
+          
+        <img class="avatar" src="https://utsfpeng.github.io/img/logo.png" style="width: 40px!important;height: auto;"  class="d-inline-block align-top" alt="" >
+        
+        <strong> Frank Peng</strong>
+      </a>
+
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        
+        <ul class="navbar-nav mr-auto ">
+          <li class="nav-item ">
+            <a class="nav-link" href="https://utsfpeng.github.io/">Home</a>
+          </li>
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://utsfpeng.github.io/blog/" >Blog  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://utsfpeng.github.io/portfolio/" >Portfolio  </a>
+            </li>
+          
+             
+            <li class="nav-item ">
+              <a class="nav-link" href="https://utsfpeng.github.io/about/" >About  </a>
+            </li>
+          
+          
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  
+ 
+      
+ 
+
+
+
+
+
+
+<div id="site-header" class="carousel slide carousel-fade" data-ride="carousel" style="height: 18rem;" >  
+
+  
+  
+  
+
+  
+  <div class="carousel-inner" role="listbox">
+    
+      
+
+        
+        <div class="carousel-item active">
+          <div class="view" style="background-image: url('https://utsfpeng.github.io/img/header-slides/raw_1515691746.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+              
+              
+              
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+      
+
+        
+        <div class="carousel-item">
+          <div class="view" style="background-image: url('https://utsfpeng.github.io/img/header-slides//raw_1515847341.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+            
+            <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            
+
+            </div>
+            
+
+          </div>
+        </div>
+        
+      
+    
+
+  
+  </div>
+  
+
+  
+  <div class="carousel-content text-center white-text wow fadeIn">
+    <div class="row mx-0 headfont mt-3 pt-4">
+      
+      <div class="col-12 col-sm-5 align-middle">
+        <a href="https://utsfpeng.github.io/">
+          
+            <img class="pull-right avatar avatar-md" src="https://utsfpeng.github.io/img/profilepic.jpg" alt="" >
+          
+        </a>
+      </div>
+      
+      <div class="col-12 col-sm-7 text-left pl-2">
+        <a href="https://utsfpeng.github.io/">
+          <h1 class="mb-2 h1" style="font-weight: 300;" >
+            <strong>Frank Peng</strong>
+          </h1>
+        </a>
+        
+
+             
+        <div class="mt-2" style="font-size: 1rem; color: white;">
+            
+              <a href="https://github.com/utsfpeng" target="_blank" rel="noopener"><i class="fab fa-github pr-1" aria-hidden="true"></i></a>    
+            
+            
+              <a href="https://au.linkedin.com/in/frank-peng" target="_blank" rel="noopener"><i class="fab fa-linkedin pr-1" aria-hidden="true"></i></a>
+            
+
+            
+
+            
+
+            
+
+            
+    
+            
+    
+        
+            
+                <a href="mailto:frank.peng@student.uts.edu.au"><i class="far fa-envelope-open pr-1" aria-hidden="true"></i></a>
+            
+    
+            
+
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  
+  
+
+</div>
+  
+    
+
+    
+  
+  <main class="post-main-wrapper">
+    
+    
+    <div class="row">
+
+      
+
+      
+      <div class="container pr-5">
+      
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+    
+  </ul>
+
+  <div class="px-4 post-heading">Webappsec Statement</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>Feb 15, 2019</li>
+    
+
+    
+  </ul>
+  
+
+</div>
+
+
+          <div class="post-content markdown">
+            
+
+<h2 id="web-application-security-problem-statement">Web Application Security - Problem Statement</h2>
+
+<p>For submission on Friday 15-02-2019</p>
+
+<h3 id="current-problem-statement-on-webappsec">Current Problem Statement on WebAppSec</h3>
+
+<p>In Web Application Security, my goal is to learn how to identify common web vulnerabilities and develop a habit/mindset on checking for them first, so that I can do something akin to a process of elimination and work out what flaws and vulnerabilities that a website may have.</p>
+
+<p>Currently, I still feel that I do not have a grasp on what to look for and haven&rsquo;t developed the habit or &ldquo;muscle-memory&rdquo; for discovering common web vulnerabilities. As such, I don&rsquo;t have a logical order of doing the basic steps to eliminate the potential likelihood that common vulnerabilities may exist.</p>
+
+<p>In order to close this knowledge gap, my solution is to start off working on the Natas challenges till I reach the end (if possible) and potentially look at the other resources suggested (WebGoat, Web for Pentester, Shellter Labs and Root Me). In addition, I might try working on Hack The Box and Try Hack Me (Mr Robot), when I feel that I have the basics down and feel comfortable that my skill level can attempt it.</p>
+
+<p>In Natas so far, I&rsquo;ve went through a few levels and discovered a pattern of:</p>
+
+<ol>
+<li>Checking the source code</li>
+<li>Checking the robots.txt</li>
+<li>Looking at the network activity</li>
+<li>Checking the request headers</li>
+</ol>
+
+<p>As documented in my &ldquo;Natas Journey&rdquo; blog post, there are a few web app vulnerabilities which were a result of misconfigurations, such as allowing Directory Traversal to an index of the parent directory, CSRF (Cross-Site Request Forgery) by editing the original HTTP GET requests and re-sending them and also human error/negligence such as Access Controls not being properly implemented.</p>
+
+<p>In Natas 5 challenge, even if you&rsquo;re not logged in, just by changing the cookie, the website can be accessed. As a scenario, this can be potentially very dangerous as it bypasses the login completely. Therefore, you transition from an unauthenticated user to an authenticated user and can potentially gain access.</p>
+
+<p>Hence, by applying my limited technical skills in cyber security can result in finding such flaws in the design if a website was to use a similar design as the one that I tested, it would be putting the website at risk. If a business was to run a website with such flaws, it can potentially cause severe financial and reputational loss.</p>
+
+<p>An example of why this might be the case: Imagine if you were an online bank and a user transferred funds to an account on a public computer. Even if the user logged off the bank website, an individual with ill intent can go on the computer and edit the cookie (like in Natas Level 5) and change that one parameter and log-in as if they were the user and transfer the funds in the account elsewhere. If this was discovered, the online bank would most likely end up in the closure of the business since it would cause irreparable damage to the bank&rsquo;s reputation and immeasurable financial loss for compensating the customer, but also face legal action from a number of stakeholders that result in astronomical amounts of fines and penalties that would need to be paid out, causing an unsustainable business.</p>
+
+<p>This type of scenario can be avoided by avoiding sensitive information being placed in cookies and validating all information placed in the cookies. In OWASP Top 10 Application Security Risks of 2017, Broken Authentication and Sensitive Data Exposure is the 2nd and 3rd most common risk that occurs, respectively. Therefore, it is highly important that cyber security is considered from the very first step, instead of the last step of the development process that still commonly occurs in the web development industry.</p>
+
+<p>Consequently, I believe it is extremely important for me to develop the ability to detect common security vulnerabilities in websites since even the smallest errors can cause major problems and repercussions.</p>
+
+          </div>
+
+          
+          <div class="row">
+            <div class="col-md-8">
+            
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=https://utsfpeng.github.io/blog/2019-02/natas-journey/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>Natas Journey</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        
+
+      </div>
+      
+
+      
+
+    </div>
+    
+
+
+  </main>
+  
+
+
+    
+    
+
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+
+  
+  <div class="pb-2 mt-5 pt-5">
+    
+      <a href="https://github.com/utsfpeng " target="_blank" rel="noopener"><i class="fab fa-github mr-3" aria-hidden="true"></i></a>    
+    
+    
+      <a href="https://au.linkedin.com/in/frank-peng" target="_blank" rel="noopener"><i class="fab fa-linkedin-in mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+        <a href="mailto:frank.peng@student.uts.edu.au"><i class="far fa-envelope-open mr-3" aria-hidden="true"></i></a>
+    
+
+    
+
+    
+
+  </div>
+  
+
+  
+  <div class="copyright py-4">
+    
+    <span>  2016 - 2019 &copy; | Theme <a href='https://github.com/orianna-zzo/AllinOne' target="_blank">AllinOne</a> by <a href='https://github.com/orianna-zzo' target="_blank">Orianna</a>  </span>
+  </div>
+  
+
+</footer>
+
+
+    
+
+
+
+
+
+
+<script type="text/javascript" src="https://utsfpeng.github.io/js/vendors/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://utsfpeng.github.io/js/vendors/jquery/jquery.smooth-scroll.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://utsfpeng.github.io/js/vendors/popper.min.js"></script>
+<script type="text/javascript" src="https://utsfpeng.github.io/js/vendors/holder.min.js"></script>
+<script type="text/javascript" src="https://utsfpeng.github.io/js/vendors-extensions/bootstrap4/bootstrap.js" ></script>
+
+<script type="text/javascript" src="https://utsfpeng.github.io/js/vendors/mdb/mdb.min.js"></script>
+
+<script type="text/javascript" src="https://utsfpeng.github.io/js/main.js"></script>
+
+
+
+  
+  <script src="https://utsfpeng.github.io/js/vendors/highlight.pack.js"> </script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+ 
+  <script src="https://utsfpeng.github.io/js/vendors/katex/katex.min.js"> </script>
+  <script src="https://utsfpeng.github.io/js/vendors/katex/contrib/auto-render.min.js"></script>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          renderMathInElement(document.body);
+      });
+  </script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  
+  new WOW().init();
+</script>
+
+
+
+
+  </body>
+</html>
