@@ -6,10 +6,32 @@
     <description>Recent content on Frank Peng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <lastBuildDate>Fri, 15 Feb 2019 01:49:06 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 21:18:55 +1100</lastBuildDate>
     
 	<atom:link href="https://utsfpeng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 2 Reflection</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/week-2-reflection/</link>
+      <pubDate>Sun, 17 Feb 2019 21:18:55 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/week-2-reflection/</guid>
+      <description>Week 2 - Reflection (Sprint 2) In the Cyber Security Summer Studio this week, our primary focus was on Web Application Security.
+We were introduced to some of the most common web application security vulnerabilities that currently exist, which include: CSRF (Cross Site Request Forgery), XSS (Cross Site Scripting) and SQLi (Structured Query Language Injection).
+CSRF is an attack that forces the user to perform an unwanted action and generally uses state-changing requests since it requires tricking a victim to click on a link or execute an action on behalf of the attacker while the user is authenticated. Since the user is already authenticated with their credentials on the site with their session cookie, it would try and make the user do actions such as changing a password or performing a transaction without the user&amp;rsquo;s knowledge.
+XSS has 3 main types: Stored, Reflected and DOM.
+Stored XSS is when a malicious scripts are injected into a website, such as when you post a forum post with a script, but the forum posting feature allows any user input and it does not escape, sanitise or validate user input. Every new visitor of that forum would be attacked by that malicious script.</description>
+    </item>
+    
+    <item>
+      <title>Revised Problem Statement</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/revised-problem-statement/</link>
+      <pubDate>Sun, 17 Feb 2019 21:18:52 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/revised-problem-statement/</guid>
+      <description>Revised Problem Statement Revised Prob Statement.</description>
+    </item>
     
     <item>
       <title>Webappsec Statement</title>

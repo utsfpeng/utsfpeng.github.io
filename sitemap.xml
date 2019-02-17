@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://utsfpeng.github.io/blog/2019-02/week-2-reflection/</loc>
+    <lastmod>2019-02-17T21:18:55+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utsfpeng.github.io/blog/2019-02/revised-problem-statement/</loc>
+    <lastmod>2019-02-17T21:18:52+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://utsfpeng.github.io/blog/2019-02/webappsec-statement/</loc>
     <lastmod>2019-02-15T01:49:06+11:00</lastmod>
   </url>
@@ -39,7 +49,7 @@
   
   <url>
     <loc>https://utsfpeng.github.io/blog/</loc>
-    <lastmod>2019-02-15T01:49:06+11:00</lastmod>
+    <lastmod>2019-02-17T21:18:55+11:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,7 +60,7 @@
   
   <url>
     <loc>https://utsfpeng.github.io/</loc>
-    <lastmod>2019-02-15T01:49:06+11:00</lastmod>
+    <lastmod>2019-02-17T21:18:55+11:00</lastmod>
     <priority>0</priority>
   </url>
   

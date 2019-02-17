@@ -14,7 +14,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://utsfpeng.github.io/blog/" />
 
-<meta property="og:updated_time" content="2019-02-15T01:49:06&#43;11:00"/>
+<meta property="og:updated_time" content="2019-02-17T21:18:55&#43;11:00"/>
 
 
   <title>
@@ -277,7 +277,7 @@
               
                 <div class="px-2 middot"></div>
                 <div>
-                  5 posts
+                  7 posts
                 </div>
               
             </div>
@@ -322,17 +322,104 @@
     <li class="page-item"><a class="page-link" href="https://utsfpeng.github.io/blog/page/2/">2</a></li>
     
     
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="https://utsfpeng.github.io/blog/page/3/">3</a></li>
+    
+    
     <li class="page-item">
     <a href="https://utsfpeng.github.io/blog/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
     </li>
     
     <li class="page-item">
-        <a href="https://utsfpeng.github.io/blog/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="https://utsfpeng.github.io/blog/page/3/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
     </li>
     
 </ul>
 
           </div>
+
+          
+              <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://utsfpeng.github.io/blog/2019-02/week-2-reflection/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">Week 2 Reflection</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>Feb 17, 2019</li>
+        
+    
+        
+      </ul>
+    </div>
+    
+
+    
+      Week 2 - Reflection (Sprint 2) In the Cyber Security Summer Studio this week, our primary focus was on Web Application Security.
+We were introduced to some of the most common web application security vulnerabilities that currently exist, which include: CSRF (Cross Site Request Forgery), XSS (Cross Site Scripting) and SQLi (Structured Query Language Injection).
+CSRF is an attack that forces the user to perform an unwanted action and generally uses state-changing requests since it requires tricking a victim to click on a link or execute an action on behalf of the attacker while the user is authenticated. Since the user is already authenticated with their credentials on the site with their session cookie, it would try and make the user do actions such as changing a password or performing a transaction without the user’s knowledge.
+XSS has 3 main types: Stored, Reflected and DOM.
+Stored XSS is when a malicious scripts are injected into a website, such as when you post a forum post with a script, but the forum posting feature allows any user input and it does not escape, sanitise or validate user input. Every new visitor of that forum would be attacked by that malicious script.......
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+      
+    </div>
+   
+    <div>
+      
+    </div>
+  </div>
+
+</div>
+
+          
+              <div class="post-wrapper white-bg post-card">
+  
+  <a href="https://utsfpeng.github.io/blog/2019-02/revised-problem-statement/">
+    <div class="post-header text-center">
+      <div class="px-4 post-heading">Revised Problem Statement</div>
+      <ul class="post-meta li-x mt-1">
+        
+          <li>Feb 17, 2019</li>
+        
+    
+        
+      </ul>
+    </div>
+    
+
+    
+      Revised Problem Statement Revised Prob Statement.......
+    
+  </a>
+
+  
+  
+  <div class="post-meta li-x mt-2 div-x">
+    <div>
+      
+      
+    </div>
+   
+    <div>
+      
+    </div>
+  </div>
+
+</div>
 
           
               <div class="post-wrapper white-bg post-card">
@@ -356,97 +443,6 @@ Current Problem Statement on WebAppSec In Web Application Security, my goal is t
 Currently, I still feel that I do not have a grasp on what to look for and haven’t developed the habit or “muscle-memory” for discovering common web vulnerabilities. As such, I don’t have a logical order of doing the basic steps to eliminate the potential likelihood that common vulnerabilities may exist.
 In order to close this knowledge gap, my solution is to start off working on the Natas challenges till I reach the end (if possible) and potentially look at the other resources suggested (WebGoat, Web for Pentester, Shellter Labs and Root Me). In addition, I might try working on Hack The Box and Try Hack Me (Mr Robot), when I feel that I have the basics down and feel comfortable that my skill level can attempt it.
 In Natas so far, I’ve went through a few levels and discovered a pattern of:......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-      
-    </div>
-   
-    <div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://utsfpeng.github.io/blog/2019-02/natas-journey/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Natas Journey</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>Feb 13, 2019</li>
-        
-    
-        
-      </ul>
-    </div>
-    
-
-    
-      Natas Journey Natas 0 Natas 0 presented a description stating “You can find the password for the next level on this page.”
-First instinct was to look in the source code for hints.
-Found the password written in plain-text within HTML comment tags.
-Natas 1 Natas 1 presented a challenge with right-click being blocked. On Google Chrome, I used Developer Tools –&gt; Inspect Element to circumvent the issue and checked the source code.
-Found the password written in plain-text within HTML comment tags like the previous level.
-Natas 2 Natas 2 stated “There is nothing on this page.”
-Checked Source Code and found a random image source pointing to a path: “files/pixel.png”.
-Checked the pixel.png file and found nothing. So went directory traversing back up into the “files” directory and it listed the index, which revealed a users.txt file.
-natas3 password was written in plain-text.
-Natas 3 Just like the previous challenge, Natas 3 stated “There is nothing on this page.”
-Within the Source Code, HTML Comments claim “…Not even Google will find it this time…”
-Challenge Accepted!
-  Besides finding it directly using Google, if we check “robots.txt”…
-  It shows that there is a Disallow for a path to “/s3cr3t/”.......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-      
-    </div>
-   
-    <div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://utsfpeng.github.io/blog/2019-02/homework-wk-2/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Homework Wk 2</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>Feb 13, 2019</li>
-        
-    
-        
-      </ul>
-    </div>
-    
-
-    
-      Week 2 - Homework Problem Statement A realistic and achievable goal that I set for myself is to gain fundamentals skills in pen-testing, so that I am able to have a solid skill set that I can build upon after the studio to go towards a future career in cyber security.
-Developing the basic mindset of being curious about errors and also how to actually go about testing. E.g. * Checking Source Code * Going through Robots.txt * Checking HTTP GET/POST Requests and their Responses. * Directory traversing * Looking for any access control misconfigurations * XSS injection into all the input fields, especially search bar * SQL injection into login screen input fields.
-Currently, I have zero knowledge of Cyber Security in regards to what tools and techniques to use for pen-testing and I want to improve my general ability to detect web application security vulnerabilities.
-I have been recommended PicoCTF, HackTheBox, natas and bandits (Wargames) to start myself on the journey of learning.
-Also the resources recommended in this week for web penetration skills development include: * Web for Pentester * WebGoat * Natas * Shellter Labs * Root Me
-Ref: https://utscyber.studio/learn/Week%202%20-%20Feb%2011/
-Possible milestones to my goal:......
     
   </a>
 
