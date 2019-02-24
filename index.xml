@@ -6,10 +6,46 @@
     <description>Recent content on Frank Peng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <lastBuildDate>Sun, 17 Feb 2019 21:18:55 +1100</lastBuildDate>
+    <lastBuildDate>Sun, 24 Feb 2019 21:07:14 +1100</lastBuildDate>
     
 	<atom:link href="https://utsfpeng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 3 Reflection</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/week-3-reflection/</link>
+      <pubDate>Sun, 24 Feb 2019 21:07:14 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/week-3-reflection/</guid>
+      <description>Week 3 Reflection (Sprint 3) Week 3 was quite an intensive week at the Cyber Security Summer Studio. We became more focused on improving our practical cyber security skills with real world testing, a variety of vulnerable VMs and taking on different cyber security challenges.
+On Monday, we started off the week with a Free For All session and I catched up with David. David had tried API testing on the industry sponsor&amp;rsquo;s website: . He tried checking robots.txt, bit swapping with a similar username to one that may exist (e.g. rupport instead of support and then flipping the bit). Furthermore, he also tried out brute forcing and also trying out different ways to get into admin. In addition, his testing led him to find out that the version of nginx that the industry sponsor&amp;rsquo;s website was using and found CVE details that reveal things can could be exploited.
+After the Free-For-All session, our studio facilitators took on our feedback and worked on improving our studio for the better based on the feedback that they received. As a student of the studio, it is really reassuring to know that the studio facilitators are putting in so much effort into the studio.</description>
+    </item>
+    
+    <item>
+      <title>Tryhackme Mr Robot Journey</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/tryhackme-mr-robot-journey/</link>
+      <pubDate>Fri, 22 Feb 2019 15:25:40 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/tryhackme-mr-robot-journey/</guid>
+      <description>Tryhackme Mr Robot Journey I attempted the Tryhackme Mr Robot Machine/CTF.
+First off, I had to set up the network to deploy the Mr. Robot virtual machine.
+I went to the access page and downloaded my configuration file and then downloaded the OpenVPN Source (in .zip file).
+When I was following the commands given in INSTALL or README file:
+ ./configure make make-install  During the ./configure command, it encountered errors.
+configure: error: openssl check failed
+I searched the error and found a stackoverflow article.
+Ref: https://superuser.com/questions/371901/openssl-missing-during-configure-how-to-fix
+I used the command suggested.
+sudo apt-get install libssl-dev
+However, even after installing that package, it still did not work.
+Upon further inspection, the How to Connect? section, I saw that there was a difference between the general commands and the ones suggested.
+Trying the other commands that were suggested. Replacing &amp;lsquo;username&amp;rsquo; with the actual username.
+sudo apt install openvpn sudo openvpn username.ovpn
+After entering those commands in, I successfully connected to the network.
+Once I connected to the network, I deployed the machine to find the 3 keys.
+I typed the ip address into the web browser and loaded the page up. At first I thought it was wrong, but after a second refresh of the page, I realised that the page was intentionally jet black for a reason.</description>
+    </item>
     
     <item>
       <title>Week 2 Reflection</title>
