@@ -6,10 +6,40 @@
     <description>Recent content on Frank Peng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
-    <lastBuildDate>Sun, 24 Feb 2019 21:07:14 +1100</lastBuildDate>
+    <lastBuildDate>Fri, 01 Mar 2019 01:35:16 +1100</lastBuildDate>
     
 	<atom:link href="https://utsfpeng.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Week 4 Reflection</title>
+      <link>https://utsfpeng.github.io/blog/2019-03/week-4-reflection/</link>
+      <pubDate>Fri, 01 Mar 2019 01:35:16 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-03/week-4-reflection/</guid>
+      <description> Week 4 Reflection (Sprint 4) Week 4 has been a very eventful week, full of challenges and accomplishments. It is also the last week of UTS MIDAS Summer Studio 2019 and I have nothing but great things to say about this Cyber Security studio which has helped me to learn about Cyber Security from scratch. It has been nothing short of amazing and I did not expect a summer studio to not only push me so far out of my comfort zone but also teach me more than I can ever imagine.
+We started the week off with Reverse Engineering with Ruben Thijssen, a speaker/presenter from Symantec. He presented us with a series of challenges that we had to solve that involved working with assembly instructions and binary files.
+More on that over at:
+Expo Presentation:
+ Personal: https://www.canva.com/design/DADS4hk65t0/OJkVW8qaaaKk0VPlUtb7Kw/view
+ Group: https://drive.google.com/file/d/102XsN4zrmiAmHWEncDSLh35mwIXZjSBE/view?usp=sharing
+  </description>
+    </item>
+    
+    <item>
+      <title>Reverse Engineering</title>
+      <link>https://utsfpeng.github.io/blog/2019-02/reverse-engineering/</link>
+      <pubDate>Mon, 25 Feb 2019 10:24:52 +1100</pubDate>
+      
+      <guid>https://utsfpeng.github.io/blog/2019-02/reverse-engineering/</guid>
+      <description>Reverse Engineering Today we were introduced to Reverse Engineering by Ruben Thijssen, a Application Security Manager from Symantec.
+He demonstrated the use of Binary Ninja to reverse engineer high-level language &amp;copy; and disassemble it into Assembly Language.
+He gave us a set of introductory challenges to reverse engineering and binary exploitation.
+The session itself challenged us to think outside the box and be strategic at what we look for.
+We were exposed to new tools such as Binary Ninja, GDB (GNU Debugger), PEDA (Python Exploit Development Assistance) and the use of x86 Opcode and Instruction Reference.
+It was unlike anything I have ever seen. I really wanted to pick his brain since he had such a vase understanding of how systems work to a very low level perspective. He was able to recognise structures from the back of his hand and develop an idea of a problem from brief descriptions. It was amazing to see such mastery of assembly language.
+0x01 - Abradolf Lincler Challenge The first challenge that he posed to use was called &amp;ldquo;0x01 - Abradolf Lincler&amp;rdquo;. This involved investigating a binary file which contains a hidden flag that we need to find in order to complete the challenge.</description>
+    </item>
     
     <item>
       <title>Week 3 Reflection</title>

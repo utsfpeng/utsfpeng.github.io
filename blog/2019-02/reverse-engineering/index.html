@@ -7,23 +7,35 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
   <meta name="author" content="Frank Peng">
-  <meta name="description" content="[Software Engineering Student | Aspiring Cyber Security Consultant]">
+  <meta name="description" content="Reverse Engineering Today we were introduced to Reverse Engineering by Ruben Thijssen, a Application Security Manager from Symantec.
+He demonstrated the use of Binary Ninja to reverse engineer high-level language &copy; and disassemble it into Assembly Language.
+He gave us a set of introductory challenges to reverse engineering and binary exploitation.
+The session itself challenged us to think outside the box and be strategic at what we look for.
+We were exposed to new tools such as Binary Ninja, GDB (GNU Debugger), PEDA (Python Exploit Development Assistance) and the use of x86 Opcode and Instruction Reference.
+It was unlike anything I have ever seen. I really wanted to pick his brain since he had such a vase understanding of how systems work to a very low level perspective. He was able to recognise structures from the back of his hand and develop an idea of a problem from brief descriptions. It was amazing to see such mastery of assembly language.
+0x01 - Abradolf Lincler Challenge The first challenge that he posed to use was called &ldquo;0x01 - Abradolf Lincler&rdquo;. This involved investigating a binary file which contains a hidden flag that we need to find in order to complete the challenge.">
   
-  <meta property="og:title" content="Blogs" />
-<meta property="og:description" content="[Software Engineering Student | Aspiring Cyber Security Consultant]" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://utsfpeng.github.io/blog/" />
-
-<meta property="og:updated_time" content="2019-02-15T01:49:06&#43;11:00"/>
+  <meta property="og:title" content="Reverse Engineering" />
+<meta property="og:description" content="Reverse Engineering Today we were introduced to Reverse Engineering by Ruben Thijssen, a Application Security Manager from Symantec.
+He demonstrated the use of Binary Ninja to reverse engineer high-level language &copy; and disassemble it into Assembly Language.
+He gave us a set of introductory challenges to reverse engineering and binary exploitation.
+The session itself challenged us to think outside the box and be strategic at what we look for.
+We were exposed to new tools such as Binary Ninja, GDB (GNU Debugger), PEDA (Python Exploit Development Assistance) and the use of x86 Opcode and Instruction Reference.
+It was unlike anything I have ever seen. I really wanted to pick his brain since he had such a vase understanding of how systems work to a very low level perspective. He was able to recognise structures from the back of his hand and develop an idea of a problem from brief descriptions. It was amazing to see such mastery of assembly language.
+0x01 - Abradolf Lincler Challenge The first challenge that he posed to use was called &ldquo;0x01 - Abradolf Lincler&rdquo;. This involved investigating a binary file which contains a hidden flag that we need to find in order to complete the challenge." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://utsfpeng.github.io/blog/2019-02/reverse-engineering/" />
+<meta property="article:published_time" content="2019-02-25T10:24:52&#43;11:00"/>
+<meta property="article:modified_time" content="2019-02-25T10:24:52&#43;11:00"/>
 
 
   <title>
   
-       Blogs | Frank Peng 
+       Reverse Engineering | Frank Peng 
   
   </title>
 
-  <link rel="canonical" href="https://utsfpeng.github.io/blog/">
+  <link rel="canonical" href="https://utsfpeng.github.io/blog/2019-02/reverse-engineering/">
 
   
   
@@ -257,244 +269,167 @@
     
 
     
-  <main class="post-main-wrapper px-5">
+  
+  <main class="post-main-wrapper">
+    
     
     <div class="row">
 
       
+
       
-        <div class="container content mt-3">  
+      <div class="container pr-5">
       
-          <ul>
-            <div class="div-x">
-              <div class='post-heading'>
+
+        
+        <div class="z-depth-1  post-wrapper white-bg single-post">
+
+          <div class="post-header text-center" >
+  <ul class="post-meta li-x">
+    
+    
+  </ul>
+
+  <div class="px-4 post-heading">Reverse Engineering</div>
+
+  <ul class="post-meta li-x mt-1">
+    
+      <li>Feb 25, 2019</li>
+    
+
+    
+  </ul>
   
-      Blogs
-  
+
 </div>
 
-              
-              
-                <div class="px-2 middot"></div>
-                <div>
-                  11 posts
-                </div>
-              
-            </div>
 
-              
-        </ul>
-        <div>
-          <div class="pagination pagination-outline justify-content-end active-color">
-            
+          <div class="post-content markdown">
             
 
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="https://utsfpeng.github.io/blog/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-    <a href="https://utsfpeng.github.io/blog/page/2/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="https://utsfpeng.github.io/blog/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="https://utsfpeng.github.io/blog/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="https://utsfpeng.github.io/blog/page/3/">3</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="https://utsfpeng.github.io/blog/page/4/">4</a></li>
-    
-    
-    <li class="page-item">
-    <a href="https://utsfpeng.github.io/blog/page/4/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="https://utsfpeng.github.io/blog/page/4/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
+<h2 id="reverse-engineering">Reverse Engineering</h2>
+
+<p>Today we were introduced to Reverse Engineering by Ruben Thijssen, a Application Security Manager from Symantec.</p>
+
+<p>He demonstrated the use of Binary Ninja to reverse engineer high-level language &copy; and disassemble it into Assembly Language.</p>
+
+<p>He gave us a set of introductory challenges to reverse engineering and binary exploitation.</p>
+
+<p>The session itself challenged us to think outside the box and be strategic at what we look for.</p>
+
+<p>We were exposed to new tools such as Binary Ninja, GDB (GNU Debugger), PEDA (Python Exploit Development Assistance) and the use of x86 Opcode and Instruction Reference.</p>
+
+<p>It was unlike anything I have ever seen. I really wanted to pick his brain since he had such a vase understanding of how systems work to a very low level perspective. He was able to recognise structures from the back of his hand and develop an idea of a problem from brief descriptions. It was amazing to see such mastery of assembly language.</p>
+
+<h3 id="0x01-abradolf-lincler-challenge">0x01 - Abradolf Lincler Challenge</h3>
+
+<p>The first challenge that he posed to use was called &ldquo;0x01 - Abradolf Lincler&rdquo;. This involved investigating a binary file which contains a hidden flag that we need to find in order to complete the challenge. Going in depth into the assembly instruction set was a first for me and I was really nervous at first due to the level of complexity. However, after trial and error along with Ruben&rsquo;s explanations, it started to make a bit more sense. It involved understanding the basic structure of the program through certain traits and patterns that occur commonly, such as recognising calls that are looping back and ones that split into two (for if/else statements) among other things.</p>
+
+<p>I started off downloading using the commands:</p>
+
+<pre><code>git clone https://github.com/longld/peda.git ~/peda
+echo &quot;source ~/peda/peda.py&quot; &gt;&gt; ~/.gdbinit
+</code></pre>
+
+<p>before running the binary file with:</p>
+
+<pre><code>./0x01-abradolf-lincler
+</code></pre>
+
+<p>followed by:</p>
+
+<pre><code>gdb 0x01-abradolf-lincler
+</code></pre>
+
+<p>which launched up GDB (GNU Debugger) and put a breakpoint on main using:</p>
+
+<pre><code>b main
+</code></pre>
+
+<p>afterwards I inspected with Binary Ninja and found that there was a main and 2 functions.</p>
+
+<p>Upon using the x/s command for a closer inspection, we realised that there was a flag once decoded from binary to character constants.</p>
+
+<figure>
+    <img src="https://utsfpeng.github.io/img/rev-eng/abradolf-1.PNG"/> 
+</figure>
+
+
+<figure>
+    <img src="https://utsfpeng.github.io/img/rev-eng/abradolf-2.PNG"/> 
+</figure>
+
+
+<h2 id="0x02-morty-crypto">0x02 - Morty Crypto</h2>
+
+<p>Morty Crypto involved some similar steps in the beginning:</p>
+
+<pre><code>./0x02-mortycrypto
+gdb 0x02-mortycrypto
+b main
+r
+</code></pre>
+
+<p>Note: There is an XOR function in the main.</p>
+
+<figure>
+    <img src="https://utsfpeng.github.io/img/rev-eng/morty-1.PNG"/> 
+</figure>
+
 
           </div>
 
           
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://utsfpeng.github.io/blog/2019-02/webappsec-statement/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Webappsec Statement</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>Feb 15, 2019</li>
-        
-    
-        
-      </ul>
-    </div>
-    
-
-    
-      Web Application Security - Problem Statement For submission on Friday 15-02-2019
-Current Problem Statement on WebAppSec In Web Application Security, my goal is to learn how to identify common web vulnerabilities and develop a habit/mindset on checking for them first, so that I can do something akin to a process of elimination and work out what flaws and vulnerabilities that a website may have.
-Currently, I still feel that I do not have a grasp on what to look for and haven’t developed the habit or “muscle-memory” for discovering common web vulnerabilities. As such, I don’t have a logical order of doing the basic steps to eliminate the potential likelihood that common vulnerabilities may exist.
-In order to close this knowledge gap, my solution is to start off working on the Natas challenges till I reach the end (if possible) and potentially look at the other resources suggested (WebGoat, Web for Pentester, Shellter Labs and Root Me). In addition, I might try working on Hack The Box and Try Hack Me (Mr Robot), when I feel that I have the basics down and feel comfortable that my skill level can attempt it.
-In Natas so far, I’ve went through a few levels and discovered a pattern of:......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-      
-    </div>
-   
-    <div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://utsfpeng.github.io/blog/2019-02/natas-journey/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Natas Journey</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>Feb 13, 2019</li>
-        
-    
-        
-      </ul>
-    </div>
-    
-
-    
-      Natas Journey Natas 0 Natas 0 presented a description stating “You can find the password for the next level on this page.”
-First instinct was to look in the source code for hints.
-Found the password written in plain-text within HTML comment tags.
-Natas 1 Natas 1 presented a challenge with right-click being blocked. On Google Chrome, I used Developer Tools –&gt; Inspect Element to circumvent the issue and checked the source code.
-Found the password written in plain-text within HTML comment tags like the previous level.
-Natas 2 Natas 2 stated “There is nothing on this page.”
-Checked Source Code and found a random image source pointing to a path: “files/pixel.png”.
-Checked the pixel.png file and found nothing. So went directory traversing back up into the “files” directory and it listed the index, which revealed a users.txt file.
-natas3 password was written in plain-text.
-Natas 3 Just like the previous challenge, Natas 3 stated “There is nothing on this page.”
-Within the Source Code, HTML Comments claim “…Not even Google will find it this time…”
-Challenge Accepted!
-  Besides finding it directly using Google, if we check “robots.txt”…
-  It shows that there is a Disallow for a path to “/s3cr3t/”.......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-      
-    </div>
-   
-    <div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
-              <div class="post-wrapper white-bg post-card">
-  
-  <a href="https://utsfpeng.github.io/blog/2019-02/homework-wk-2/">
-    <div class="post-header text-center">
-      <div class="px-4 post-heading">Homework Wk 2</div>
-      <ul class="post-meta li-x mt-1">
-        
-          <li>Feb 13, 2019</li>
-        
-    
-        
-      </ul>
-    </div>
-    
-
-    
-      Week 2 - Homework Problem Statement A realistic and achievable goal that I set for myself is to gain fundamentals skills in pen-testing, so that I am able to have a solid skill set that I can build upon after the studio to go towards a future career in cyber security.
-Developing the basic mindset of being curious about errors and also how to actually go about testing. E.g. * Checking Source Code * Going through Robots.txt * Checking HTTP GET/POST Requests and their Responses. * Directory traversing * Looking for any access control misconfigurations * XSS injection into all the input fields, especially search bar * SQL injection into login screen input fields.
-Currently, I have zero knowledge of Cyber Security in regards to what tools and techniques to use for pen-testing and I want to improve my general ability to detect web application security vulnerabilities.
-I have been recommended PicoCTF, HackTheBox, natas and bandits (Wargames) to start myself on the journey of learning.
-Also the resources recommended in this week for web penetration skills development include: * Web for Pentester * WebGoat * Natas * Shellter Labs * Root Me
-Ref: https://utscyber.studio/learn/Week%202%20-%20Feb%2011/
-Possible milestones to my goal:......
-    
-  </a>
-
-  
-  
-  <div class="post-meta li-x mt-2 div-x">
-    <div>
-      
-      
-    </div>
-   
-    <div>
-      
-    </div>
-  </div>
-
-</div>
-
-          
+          <div class="row">
+            <div class="col-md-8">
             
+            </div>
+            
+          </div>
+          
+
+          
+          <div class="row pt-3">
+            <div class="col-md-6">
+              
+                <a href=https://utsfpeng.github.io/blog/2019-02/week-3-reflection/ class="post-meta">Previous
+                  <div class="pt-2 pb-5 d-flex">
+                    <i class="fas fa-angle-left text-grey font-weight-bold mr-2 active-color"></i>
+                    <span>Week 3 Reflection</span>
+                  </div>
+                </a>
+              
+            </div>
+            
+            <div class="col-md-6 text-right" >
+              
+                <a href=https://utsfpeng.github.io/blog/2019-03/week-4-reflection/ class="post-meta">Next
+                  <div class="pt-2 pb-5 flex-reverse">
+                    <i class="fas fa-angle-right text-grey font-weight-bold ml-2 active-color"></i>
+                    <span>Week 4 Reflection</span>
+                  </div>
+                </a>
+              
+            </div>
+          </div>
+
+          
+
         </div>
+        
+
       </div>
       
 
+      
+
     </div>
+    
+
+
   </main>
+  
+
 
     
     

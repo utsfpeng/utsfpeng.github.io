@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://utsfpeng.github.io/blog/2019-03/week-4-reflection/</loc>
+    <lastmod>2019-03-01T01:35:16+11:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://utsfpeng.github.io/blog/2019-02/reverse-engineering/</loc>
+    <lastmod>2019-02-25T10:24:52+11:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://utsfpeng.github.io/blog/2019-02/week-3-reflection/</loc>
     <lastmod>2019-02-24T21:07:14+11:00</lastmod>
   </url>
@@ -59,7 +69,7 @@
   
   <url>
     <loc>https://utsfpeng.github.io/blog/</loc>
-    <lastmod>2019-02-24T21:07:14+11:00</lastmod>
+    <lastmod>2019-03-01T01:35:16+11:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -70,7 +80,7 @@
   
   <url>
     <loc>https://utsfpeng.github.io/</loc>
-    <lastmod>2019-02-24T21:07:14+11:00</lastmod>
+    <lastmod>2019-03-01T01:35:16+11:00</lastmod>
     <priority>0</priority>
   </url>
   
