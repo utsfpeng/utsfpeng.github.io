@@ -377,6 +377,43 @@ r
 </figure>
 
 
+<p>To understand what is actually happening when running the whole binary file of the application, we inspected the ELF graph to get a visual overview of what is going on.</p>
+
+<figure>
+    <img src="https://utsfpeng.github.io/img/rev-eng/morty-2.PNG"/> 
+</figure>
+
+
+<p>Based on the view, we can tell that there is a loop which checks if a counter hits a certain value (27). Once it does, it moves to the else statement section of the code.</p>
+
+<p>After it moves to the else statement, it has finished running the xor&rsquo;ing process. Hence, we can use the starting instruction of the else statement as a breakpoint to look at hints about the flag. In my case, the assembly instruction mov eax, 0x0 was residing at the address 0x8049bc5 .</p>
+
+<figure>
+    <img src="https://utsfpeng.github.io/img/rev-eng/morty-3.PNG"/> 
+</figure>
+
+
+<p>To find the flag, we need to look at the application through GDB after adding the breakpoint for the mov instruction.</p>
+
+<pre><code>b *0x8049bc5
+</code></pre>
+
+<p>So from start to finish,</p>
+
+<pre><code>./0x02-mortycrypto
+gdb 0x02-mortycrypto
+b main
+b *0x8049bc5
+r
+continue
+</code></pre>
+
+<p>After you press enter on the continue, it will go through and decode the whole flag.</p>
+
+<p>References</p>
+
+<p>Ref: <a href="http://uts-cs.securitygrounds.org/reverse-engineering/0x00/index.html">http://uts-cs.securitygrounds.org/reverse-engineering/0x00/index.html</a></p>
+
           </div>
 
           
